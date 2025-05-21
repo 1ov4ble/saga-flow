@@ -22,10 +22,8 @@ export function resumeSaga(sagaId, saga) {
     throw new Error(`Saga state not found for id: ${sagaId}`);
   }
 
-  // Restore context
   Object.assign(saga.context, state.context);
 
-  // Restart from failed step
   const failedStepIndex = state.steps.findIndex(step => step.status === 'failed');
   if (failedStepIndex !== -1) {
     saga.steps = saga.steps.slice(failedStepIndex);
