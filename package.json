@@ -1,0 +1,14 @@
+{
+  "name": "saga-flow",
+  "version": "1.0.0",
+  "description": "A JavaScript library for implementing the Saga pattern in distributed transactions",
+  "main": "api.js",
+  "type": "module",
+  "keywords": [
+    "saga",
+    "distributed-transactions",
+    "transaction-pattern"
+  ],
+  "author": "veldev",
+  "license": "MIT"
+} 
